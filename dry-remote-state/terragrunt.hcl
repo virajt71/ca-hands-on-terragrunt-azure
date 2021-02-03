@@ -3,8 +3,8 @@ remote_state {
   backend = "azurerm"
   config = {
     resource_group_name  = "REPLACEME"
-    storage_account_name = "terrastatestorage876"
-    container_name       = "terraformdemo" 
+    storage_account_name = "STORAGEACCOUNT"
+    container_name       = "calab" 
     key            = "${path_relative_to_include()}/terraform.tfstate"
   }
 }
