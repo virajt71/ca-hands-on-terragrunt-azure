@@ -17,7 +17,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
   location              = var.rg_location
   resource_group_name   = var.rg_name
   network_interface_ids = [azurerm_network_interface.nic.id]
-  size                  = "Standard_B1s"
+  size                  = "Basic_A1"
   admin_username        = "terraadmin"
   admin_password        = "P@ssw0rdP@ssw0rd"
 
