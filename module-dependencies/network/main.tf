@@ -1,19 +1,3 @@
-terraform {
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "2.40.0"
-    }
-  }
-  backend "azurerm" {}
-
-}
-
-provider "azurerm" {
-  features {}
-}
-
-
 #Create virtual network
 resource "azurerm_virtual_network" "vnet1" {
   name                = "vnet-qa-westus-001"
