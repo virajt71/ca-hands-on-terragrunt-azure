@@ -24,8 +24,8 @@ EOF
 remote_state {
   backend = "azurerm"
   config = {
-    resource_group_name  = "cal-1372-13"
-    storage_account_name = "sacalabscal137213"
+    resource_group_name  = "REPLACEME"
+    storage_account_name = "STORAGEACCOUNT"
     container_name       = "calab" 
     key            = "${path_relative_to_include()}/terraform.tfstate"
   }
