@@ -7,6 +7,7 @@ chmod -R 777 /cloudacademy
 # Replace Resource Group Name
 find "/cloudacademy" -name "*.tf" | xargs sed -i "s/REPLACEME/$2/g"
 find "/cloudacademy" -name "*.hcl" | xargs sed -i "s/REPLACEME/$2/g"
+find "/cloudacademy" -name "*.yaml" | xargs sed -i "s/REPLACEME/$2/g"
 
 # Replace Storage Account Name
 find "/cloudacademy" -name "*.hcl" | xargs sed -i "s/STORAGEACCOUNT/$3/g"
